@@ -1,0 +1,19 @@
+.ads {
+    &__title {
+        text-align: center;
+    }
+    &__galery {
+        display: flex;
+        justify-content: space-between;
+        gap: 2%;
+        max-width: 100%;
+        
+    }
+    &__img {
+        width: 30%;
+        > img {
+            object-fit: contain;
+            width: 100%;
+        }
+    }
+}

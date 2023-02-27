@@ -1,0 +1,14 @@
+.title {
+    @include font('Lab Grotesque', normal, 250, 40px, 55px);
+    text-transform: uppercase;
+        background: -webkit-linear-gradient(226.43deg, #FFFFFF 49.37%, rgba(255, 255, 255, 0) 99.78%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        letter-spacing: 0.07em;
+}
+.subtitle {
+    @include font( 'Lab Grotesque', normal, 400, 24px, 36px);
+    color: #FFFFFF;
+    padding-bottom: 7%;
+}

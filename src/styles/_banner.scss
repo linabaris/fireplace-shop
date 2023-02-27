@@ -1,0 +1,63 @@
+.banner {
+    display: flex;
+    padding-top: 98px;
+    &__left {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+
+    }
+    &__right {
+        width: 60%;
+        background: radial-gradient(circle closest-side at 250px 140px, rgba(167, 78, 2, 0.5415940058) -60%, rgba(255, 207, 122, 0) 100%),
+        radial-gradient(circle closest-side at 250px 140px, rgba(255,207,122,1) -100%, rgba(0,0,0,0) 75%);                    
+        // background: radial-gradient(circle  at top, #A74E02, #1B1B1A);
+        // background: radial-gradient(circle at 65% 15%, #FBF2EB, #352A3B);
+        img {
+            width: 100%;
+            object-fit: contain;
+        }
+    }
+    &__title_main {
+        @include font('Lab Grotesque', normal, 250, 64px, 80px);
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        background: -webkit-linear-gradient(226.43deg, #FFFFFF 49.37%, rgba(255, 255, 255, 0) 99.78%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    &__price {
+        color: #FFCF7A;
+        @include font('Lab Grotesque', normal, 300, 30px, 40px);
+        letter-spacing: 0.05em;
+        padding-top: 29px;
+    }
+    &-info {
+        display: flex;
+        padding-top: 86px;
+        justify-content: space-evenly;
+        &__manufacture span, &__delivery span {
+            @include font('Lab Grotesque', normal, 400, 14px, 22px);
+            color: #FFF;
+            text-align: center;
+            padding-top: 10%;
+        }
+        &__manufacture, &__delivery {
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+        }
+        &__manufacture {
+            max-width: 15%;
+        }
+        &__delivery {
+            max-width: 20%;
+        }
+        &__manufacture img, &__delivery img {
+            width: 30px;
+            height: 30px;
+        }
+    }
+    
+}

@@ -1,0 +1,63 @@
+.constructor {
+    &__body{ 
+        display: flex;
+        justify-content: space-between;
+    }
+    &__summary {
+        display: flex;
+        justify-content: space-between;
+    }
+    &-sum__item {
+        display: flex;
+        flex-direction: column;
+    }
+    &-item {
+        &__name {
+            @include font('Lab Grotesque', normal, 500, 10px, 55px);
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: $color-text-xs;
+        }
+        &__body {
+            &_len {
+                @include font('Lab Grotesque', normal, 400, 24px, 55px);
+                color: #FFF;
+            }
+            &_color {
+                width: 28px;
+                height: 28px;
+                background: #B8542A;
+                border-radius: 500px;
+            }
+            &_price {
+                color: #FFCF7A;
+                @include font('Lab Grotesque', normal, 300, 30px, 40px);
+                letter-spacing: 0.05em;
+            }
+        }
+    }
+}
+.params {
+    &__title {
+        @include font('Lab Grotesque', normal, 500, 10px, 55px);
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        color: $color-text-xs;
+    }
+    &__val {
+        @include font('Lab Grotesque', normal, 500, 18px, 55px);
+        color: #FFF;
+    }
+}
+.list {
+    display: flex;
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        gap: 10%;
+    }
+    &__label {
+        @include font('Lab Grotesque', normal, 500, 14px, 30px);
+        color: #FFF;
+    }
+}

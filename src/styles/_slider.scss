@@ -1,0 +1,30 @@
+.slider {
+    -webkit-appearance: none;
+    appearance: none;
+    background: #646464;
+    outline: none;
+    height: 3px;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    width: 400px;
+    overflow: hidden;
+}
+.slider:hover {
+    opacity: 1;
+}
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none; 
+    appearance: none;
+    background: #FFCF7A;
+    width: 30px; 
+    height: 30px; 
+    cursor: pointer;
+    box-shadow: -430px 0 0 430px #FFCF7A;
+}
+.slider::-moz-range-thumb {
+    width: 30px; /* Set a specific slider handle width */
+    height: 30px; /* Slider handle height */
+    background: #FFCF7A; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+}

@@ -1,0 +1,50 @@
+.footer {
+    background-color: $color-bg-footer;
+    &__title {
+        padding: 71px 0;
+    }
+    &__contacts {
+        display: flex;
+        justify-content: space-between;
+    }
+    &-contacts {
+        &__item {
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 30px;
+            justify-content: flex-start;
+        }
+        &__type {
+            @include font('Lab Grotesque', normal, 300, 14px, 36px);
+            color: #949494;
+        }
+        &__address {
+            @include font('Lab Grotesque', normal, 300, 22px, 36px);
+            color: #FFFFFF;
+        }
+        &__phone {
+            @include font('Lab Grotesque',normal, 250, 36px, 33px);
+            color: #FFFFFF;
+        }
+    }
+    &__info {
+        border-top: 1px solid #232323;
+    }
+    &-info {
+        &__container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 30px auto;
+        }
+        &__name {
+            @include font('Scania Sans CY Headline',normal, 400, 14px, 70px);
+            color: #FFFFFF;
+        }
+        &__year, &__official-name, &__user-agreement {
+            @include font('Lab Grotesque', normal, 400, 14px, 18px);
+            color: $color-text-xs;
+            text-align: center;
+        }
+    }
+}

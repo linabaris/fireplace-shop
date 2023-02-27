@@ -1,0 +1,13 @@
+.catalog {
+    margin: 8% auto;
+    &__title {
+        @include font('Lab Grotesque', normal, 300, 30px, 44px);
+        text-align: center;
+        color: $color-text-main;
+        padding-bottom: 3%;
+    }
+    &__btn {
+        margin: 0 auto;
+        display: block;
+    }
+}

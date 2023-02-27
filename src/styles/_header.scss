@@ -1,0 +1,63 @@
+.header {
+    width: 100%;
+    display: flex;
+    padding-top: 5vh;
+    &__logo {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 55%;
+        gap: 6%;
+    }
+    &__nav {
+        width: 35%;
+    }
+    &-contact__btn {
+        width: 50px;
+        height: 50px;
+        background-color: $color-details;
+        background-image:  $color-gradient-down, $color-gradient-up;
+        border-radius: 6px;
+    }
+    &__contact {
+        display: flex;
+        width: 10%;
+        justify-content: flex-end;
+        align-items: center;
+    }
+}
+
+.logo {
+    &__name {
+        @include font('Scania Sans CY Headline', normal, 400, 20px, 70px);
+        letter-spacing: 0.105em;
+        color: #FFF;
+    }
+    &__description {
+        width: 25%;
+        @include font('Lab Grotesque', normal, 400, 12px, 18px);
+        letter-spacing: 0.05em;
+        color: $color-text-xs;
+    } 
+}
+.nav {
+    &__list {
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        @include font('Lab Grotesque', normal, 400, 13px, 16px);
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: $color-text-item;
+    }
+    &__item {
+        @include scale-back;
+
+    }
+    &__item:hover {
+        @include scale;
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,23 @@
+.btn {
+    width: 279px;
+    height: 60px;
+    border: 1px solid #CEB787;
+    border-radius: 2px;
+    transform: scale(1);
+    transition: transform .4s ease;
+    @include font('Lab Grotesque', normal, 500, 18px, 30px);
+    &_transparent {
+        background-color: transparent;
+        color: #FFFFFF;
+    }
+    &_color {
+        color: #121212;
+        background-color: $color-btn-bg;
+        border-radius: 3px;
+        background-image: linear-gradient(30deg, #F98B4D 10%, #ECCF94 30%, #FFD9C4 100%);
+    }
+    &:hover {
+        transform: scale(1.05);
+        transition: transform .4s ease;
+    }
+}

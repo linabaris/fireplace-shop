@@ -1,0 +1,78 @@
+.product-info {
+    display: flex;
+    justify-content: space-between;
+
+    &__left, &__right {
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+.fuel {
+    &__img {
+        display: flex;
+        flex-direction: column;
+        @include font('Lab Grotesque', normal, 400, 14px, 27px);
+        color: #FFFFFF;
+        position: relative;
+        margin-bottom: 38%;
+
+        &_first {
+            z-index: 2;
+        }
+        &_second {
+            z-index: 1;
+            position: absolute;
+            top: 66px;
+        }
+
+    }
+    &__desc {
+        padding-bottom: 20px;
+    }
+    &-details {
+        padding-bottom: 10%;
+        &__title {
+            @include font('Lab Grotesque', normal, 400, 16px, 27px);
+            color: #757575;
+            padding-bottom: 15px;
+        }
+        &__list {
+            display: flex;
+            &_left, &_right {
+                @include font('Lab Grotesque', normal, 400, 14px, 27px);
+                color: #FFFFFF;
+            }
+            &_left {
+                width: 80%;
+            }
+            &_right {
+                width: 110%;
+            }
+        }
+    }
+}
+.galery {
+    position: relative;
+    &__img_prev {
+        position: absolute;
+        bottom: 30px;
+        left: 30px;
+        cursor: pointer;
+        transform: scale(1);
+        transition: transform .3s ease;
+    }
+    &__img_next {
+        position: absolute;
+        bottom: 30px;
+        left: 60px;
+        cursor: pointer;
+        transform: scale(1);
+        transition: transform .3s ease;
+    }
+    &__img_prev:hover, &__img_next:hover {
+        transform: scale(1.2);
+        transition: transform .3s ease;
+    }
+}
