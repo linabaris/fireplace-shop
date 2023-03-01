@@ -1,6 +1,10 @@
 .ads {
+    &__line {
+        margin-bottom: 90px;
+    }
     &__title {
         text-align: center;
+        margin-bottom: 45px;
     }
     &__galery {
         display: flex;

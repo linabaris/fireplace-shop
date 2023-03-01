@@ -6,6 +6,7 @@
     &__summary {
         display: flex;
         justify-content: space-between;
+        margin: 68px auto 89px;
     }
     &-sum__item {
         display: flex;
@@ -48,6 +49,29 @@
         @include font('Lab Grotesque', normal, 500, 18px, 55px);
         color: #FFF;
     }
+    &-panel {
+        &__choosing {
+            @include flex;
+            gap: 5%;
+        }
+        &__slider {
+            display: flex;
+            gap: 4px;
+            margin-top: 20px;
+            width: 50%;
+            margin: 20px auto 0;
+        }
+        &__slide {
+            display: block;
+            width: 12px;
+            height: 2px;
+            background-color: #464239;
+            cursor: pointer;
+        }
+    }
+}
+.active {
+    background-color: $color-details;
 }
 .list {
     display: flex;
@@ -59,5 +83,8 @@
     &__label {
         @include font('Lab Grotesque', normal, 500, 14px, 30px);
         color: #FFF;
+    }
+    &__left, &__right {
+        width: 100%;
     }
 }

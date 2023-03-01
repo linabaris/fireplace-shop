@@ -1,0 +1,65 @@
+.list {
+    &__item {
+        position: relative;
+        // cursor: pointer;
+        user-select: none;
+    }
+    &__label {
+        > input {
+            position: absolute;
+            opacity: 0;
+            // cursor: pointer;
+            height: 0;
+            width: 0;
+        }
+        > span {
+            position: absolute;
+            top: 2px;
+            left: 190px;
+            height: 25px;
+            width: 25px;
+            background-color: #eee;
+            cursor: pointer;
+            border-radius: 2px;
+        }
+        > input:checked ~ span {
+            background-color: #ECCF94;
+        }
+        > span::after {
+            content: '';
+            position: absolute;
+            display: none;
+        }
+        > span::before {
+            content: '';
+            position: absolute;
+            display: none;
+        }
+        > input:checked ~ span::after {
+            display: block;
+        }
+        > input:checked ~ span::before {
+            display: block;
+        }
+        > span::after {
+            left: 11px;
+            top: 3px;
+            width: 6px;
+            height: 6px;
+            border: solid black;
+            border-width: 0 3px 3px 0;
+            transform: rotate(90deg);
+        }
+        > span::before {
+            left: 5px;
+            top: 10px;
+            width: 6px;
+            height: 6px;
+            border: solid black;
+            border-width: 0 3px 3px 0;
+            transform: rotate(270deg);
+        }
+
+    }
+    
+}
